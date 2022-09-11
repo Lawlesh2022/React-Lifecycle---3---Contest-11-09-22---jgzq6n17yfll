@@ -3,24 +3,22 @@ import '../styles/App.css';
 
 class Odd extends React.Component { 
   render() {  
-    return (
-       console.log("Even is unmounted")
+    return (      
       <div id="odd">
         I am odd
       </div>
-       //console.log("Odd is unmounted")
+       console.log("Even is unmounted")
     )    
   }
 }
 
 class Even extends React.Component {
   render() {    
-    return (
-       console.log("Odd is unmounted")
+    return (     
       <div id="even">
         I am even
       </div>
-       //console.log("Even is unmounted")
+       console.log("Odd is unmounted")
     )   
   }
 }
