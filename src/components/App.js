@@ -2,26 +2,28 @@ import React from 'react'
 import '../styles/App.css';
 
 class Odd extends React.Component {
-  //console.log("Even is unmounted")
+ 
   render() {
-   console.log("Even is unmounted")
+   //console.log("Even is unmounted")
     return (
       <div id="odd">
         I am odd
       </div>
     )
+     console.log("Odd is unmounted")
   }
 }
 
 class Even extends React.Component {
-//   console.log("Even is unmounted")
+
   render() { 
-    console.log("Odd is unmounted")
+    //console.log("Odd is unmounted")
     return (
       <div id="even">
         I am even
       </div>
     )
+    console.log("Even is unmounted")
   }
 }
 class App extends React.Component {
