@@ -15,7 +15,8 @@ class Odd extends React.Component {
 
 class Even extends React.Component {
 //   console.log("Even is unmounted")
-  render() {    
+  render() { 
+    console.log("Odd is unmounted")
     return (
       <div id="even">
         I am even
@@ -31,7 +32,7 @@ class App extends React.Component {
     super(props)
     this.state = {even: true}
     this.handleChange =  this.handleChange.bind(this)
-    console.log("Odd is unmounted")
+    //console.log("Odd is unmounted")
   }
   render() {
     return (
