@@ -32,7 +32,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="main">
-        {this.state.even ? <Even  console.log("Odd is unmounted") /> : <Odd  console.log("Even is unmounted")/>}
+        {this.state.even ? <Even/>  console.log("Odd is unmounted") : <Odd/>  console.log("Even is unmounted")}
 
         <button id="toggle" onClick={this.handleChange}>Change</button>
       </div>
