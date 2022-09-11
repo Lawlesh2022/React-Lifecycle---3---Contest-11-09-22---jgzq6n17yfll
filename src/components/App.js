@@ -6,8 +6,7 @@ class Odd extends React.Component {
     return (      
       <div id="odd">
         I am odd
-      </div>
-       console.log("Even is unmounted")
+      </div>      
     )    
   }
 }
@@ -17,8 +16,7 @@ class Even extends React.Component {
     return (     
       <div id="even">
         I am even
-      </div>
-       console.log("Odd is unmounted")
+      </div>       
     )   
   }
 }
@@ -34,7 +32,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="main">
-        {this.state.even ? <Even /> : <Odd />}
+        {this.state.even ? <Even  console.log("Odd is unmounted") /> : <Odd  console.log("Even is unmounted")/>}
 
         <button id="toggle" onClick={this.handleChange}>Change</button>
       </div>
