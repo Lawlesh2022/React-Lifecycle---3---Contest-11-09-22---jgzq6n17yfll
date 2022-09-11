@@ -7,6 +7,7 @@ class Odd extends React.Component {
       <div id="odd">
         I am odd
       </div>
+       console.log("Odd is unmounted")
     )    
   }
 }
@@ -17,6 +18,7 @@ class Even extends React.Component {
       <div id="even">
         I am even
       </div>
+       console.log("Even is unmounted")
     )   
   }
 }
@@ -27,8 +29,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {even: true}
-    this.handleChange =  this.handleChange.bind(this)
-    console.log("Odd is unmounted")
+    this.handleChange =  this.handleChange.bind(this)   
   }
   render() {
     return (
