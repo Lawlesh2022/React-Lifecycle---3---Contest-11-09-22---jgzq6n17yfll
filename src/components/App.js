@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/App.css';
 
 class Odd extends React.Component {
-  console.log("Even is unmounted")
+  console.log("Odd is unmounted")
   render() {
     return (
       <div id="odd">
@@ -13,7 +13,7 @@ class Odd extends React.Component {
 }
 
 class Even extends React.Component {
-  console.log("Odd is unmounted")
+  console.log("Even is unmounted")
   render() {
     return (
       <div id="even">
