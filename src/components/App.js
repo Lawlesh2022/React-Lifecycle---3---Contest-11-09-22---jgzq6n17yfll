@@ -1,29 +1,23 @@
 import React from 'react'
 import '../styles/App.css';
 
-class Odd extends React.Component {
- 
-  render() {
-   console.log("Odd is unmounted")
+class Odd extends React.Component { 
+  render() {  
     return (
       <div id="odd">
         I am odd
       </div>
-    )
-    
+    )    
   }
 }
 
 class Even extends React.Component {
-
-  render() { 
-    console.log("Even is unmounted")
+  render() {    
     return (
       <div id="even">
         I am even
       </div>
-    )
-   
+    )   
   }
 }
 class App extends React.Component {
@@ -34,7 +28,7 @@ class App extends React.Component {
     super(props)
     this.state = {even: true}
     this.handleChange =  this.handleChange.bind(this)
-    //console.log("Odd is unmounted")
+    console.log("Odd is unmounted")
   }
   render() {
     return (
