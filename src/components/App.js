@@ -10,7 +10,7 @@ class Odd extends React.Component {
         I am odd
       </div>
     )
-     console.log("Odd is unmounted")
+     console.log("Even is unmounted")
   }
 }
 
@@ -23,7 +23,7 @@ class Even extends React.Component {
         I am even
       </div>
     )
-    console.log("Even is unmounted")
+    console.log("Odd is unmounted")
   }
 }
 class App extends React.Component {
