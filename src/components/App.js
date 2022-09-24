@@ -3,6 +3,7 @@ import '../styles/App.css';
 
 class Odd extends React.Component { 
   render() {  
+      console.log("Even is unmounted") 
     return (      
       <div id="odd">
         I am odd
@@ -12,7 +13,8 @@ class Odd extends React.Component {
 }
 
 class Even extends React.Component {
-  render() {    
+  render() {  
+    console.log("Odd is unmounted")  
     return (     
       <div id="even">
         I am even
@@ -32,7 +34,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="main">
-        {this.state.even ? <Even/>  console.log("Odd is unmounted") : <Odd/>  console.log("Even is unmounted")}
+        {this.state.even ? <Even/> : <Odd/>}
 
         <button id="toggle" onClick={this.handleChange}>Change</button>
       </div>
